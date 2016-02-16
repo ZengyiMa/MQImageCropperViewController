@@ -15,6 +15,7 @@
 		F0809E171C72B01B00780B6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0809E151C72B01B00780B6B /* LaunchScreen.storyboard */; };
 		F0809E221C72B01B00780B6B /* MQImageCropperViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0809E211C72B01B00780B6B /* MQImageCropperViewControllerTests.m */; };
 		F0809E2D1C72B01B00780B6B /* MQImageCropperViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0809E2C1C72B01B00780B6B /* MQImageCropperViewControllerUITests.m */; };
+		F0809E3D1C72B17400780B6B /* MQImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0809E3C1C72B17400780B6B /* MQImageCropperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		F0809E281C72B01B00780B6B /* MQImageCropperViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQImageCropperViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0809E2C1C72B01B00780B6B /* MQImageCropperViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQImageCropperViewControllerUITests.m; sourceTree = "<group>"; };
 		F0809E2E1C72B01B00780B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0809E3B1C72B17400780B6B /* MQImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQImageCropperViewController.h; sourceTree = "<group>"; };
+		F0809E3C1C72B17400780B6B /* MQImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQImageCropperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		F0809E061C72B01B00780B6B /* MQImageCropperViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F0809E3A1C72B14300780B6B /* MQImageCropperViewController */,
 				F0809E0A1C72B01B00780B6B /* AppDelegate.h */,
 				F0809E0B1C72B01B00780B6B /* AppDelegate.m */,
 				F0809E0D1C72B01B00780B6B /* ViewController.h */,
@@ -138,6 +142,15 @@
 				F0809E2E1C72B01B00780B6B /* Info.plist */,
 			);
 			path = MQImageCropperViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		F0809E3A1C72B14300780B6B /* MQImageCropperViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0809E3B1C72B17400780B6B /* MQImageCropperViewController.h */,
+				F0809E3C1C72B17400780B6B /* MQImageCropperViewController.m */,
+			);
+			path = MQImageCropperViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0809E3D1C72B17400780B6B /* MQImageCropperViewController.m in Sources */,
 				F0809E0F1C72B01B00780B6B /* ViewController.m in Sources */,
 				F0809E0C1C72B01B00780B6B /* AppDelegate.m in Sources */,
 				F0809E091C72B01B00780B6B /* main.m in Sources */,

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAx-pr-POB">
+                                <rect key="frame" x="270" y="20" width="60" height="30"/>
+                                <state key="normal" title="选择图片"/>
+                                <connections>
+                                    <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1SE-Bc-rYx"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HqT-3k-9VY">
+                                <rect key="frame" x="0.0" y="58" width="600" height="542"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HqT-3k-9VY" secondAttribute="bottom" id="K1b-AL-Jay"/>
+                            <constraint firstAttribute="trailing" secondItem="HqT-3k-9VY" secondAttribute="trailing" id="UzN-ie-sjQ"/>
+                            <constraint firstItem="xAx-pr-POB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Vjl-LN-AbS"/>
+                            <constraint firstItem="xAx-pr-POB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l32-5Z-VMV"/>
+                            <constraint firstItem="HqT-3k-9VY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mqc-zP-DaC"/>
+                            <constraint firstItem="HqT-3k-9VY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="oXQ-l3-KHA"/>
+                            <constraint firstItem="HqT-3k-9VY" firstAttribute="top" secondItem="xAx-pr-POB" secondAttribute="bottom" constant="8" id="uIr-2E-EWV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="uIr-2E-EWV"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="iv" destination="HqT-3k-9VY" id="hUD-yk-fac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-92" y="440"/>
         </scene>
     </scenes>
 </document>
